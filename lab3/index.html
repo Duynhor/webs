@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setup môi trường lập trình</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHu6RGvqttUiGdXO0X8MmxzhRq87T9BPCLAg&usqp=CAU" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <header style="width: 100% !important;" class="header">
+        <div class="Search_wrapper__Bwvae d-flex-center" aria-expanded="false"><div class="Search_searchIcon__-23JY"></div><input class="search-wrapper" spellcheck="false" placeholder="Tìm kiếm..." value=""></div>
+        
+        <path fill="currentColor" d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z"></path>
+    </header>
+
+      <nav class="nav">
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </nav>
+
+      <div class="content">
+        <main class="main">
+          <section class="section">
+            <div class="section"></div>
+
+            <div class="section-header">
+              <h1 style="font-size: 40px;">
+                &nbsp; Setup Môi Trường Lập Trình Nhanh Chóng Cho Desktop. Phần
+                2: Setup cho Windows
+              </h1>
+            </div>
+
+            <div class="section-content"><p>
+      Trong phần trước, mình đã cũng các bạn tìm hiểu về một cách setup phần mềm
+      nhanh gọn lẹ. Trong phần này, mình sẽ cùng các bạn setup môi trường làm
+      việc cho Windows bằng các dòng lệnh nhé.
+    </p>
+
+    <h2>Trước khi bạn đi tiếp:</h2>
+
+    <ul>
+        <li>
+            Mình khuyến khích các bạn dành thời gian
+            <a class="four" href="https://fullstack.edu.vn/blog/setup-moi-truong-lap-trinh-nhanh-chong-cho-desktop-phan-1-ly-thuyet.html">đọc phần 1 </a> 
+            để hiểu bản chất những gì mình sẽ làm trong phần này.
+        </li>
+
+        <li>
+            Cách setup trong phần này có thể khá phức tạp và lằng nhằng với một số bạn. Bạn nên chuẩn bị một chút kiên định và thật bình tĩnh để đọc tiếp. Người ta có câu là: “Khổ trước sướng sau, thế mới giàu” =))
+        </li>
+
+        <li>
+            Bạn không nên áp dụng cái này thẳng vào máy bạn vội. Thay vào đó, mình khuyến khích bạn dùng máy ảo Windows để thí nghiệm với các câu lệnh trước, để biết được những khả năng có thể xảy ra khi sử dụng phương pháp này. Về máy ảo mình khuyên các bạn nên dùng VirtualBox của Oracle bởi dễ sử dụng và có nhiều tính năng hay ho mà chúng ta sẽ cần. Còn về cách cài máy ảo Windows trên VirtualBox thì các bạn nên tự search và tự làm nhé.
+        </li>
+
+    </ul>
+
+    <h2>
+        Tips nhỏ: lưu snapshot của máy ảo Windows để tránh phải cài lại máy và gỡ cài đặt nếu xảy ra lỗi
+    </h2>
+
+    <p>
+        Ngay sau khi các bạn cài xong máy ảo, mở máy ảo lên và để cho vào được Windows lần đầu. Lúc này, mở giao diện của VirtualBox lên.
+    </p>
+
+    <p>
+        Ở bên trái phần máy ảo đang chạy, click vào phần ba gạch ngang, và click vào Snapshots:
+    </p>
+
+    <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3901/62b454f96732a.png" alt="">
+
+    <p>
+        Nhấn vào take:
+    </p>
+    
+    <p>
+        <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3901/62b4555cd1e6a.png" alt="">
+    </p>
+
+    <p>
+        Đặt tên, description rồi click OK:
+    </p>
+
+    <p>
+        <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3901/62b455ee46178.png" alt="">
+    </p>
+
+    <p>
+        Kể từ giờ nếu muốn reset lại máy ảo quay trở về nguyên vẹn ban đầu thì trong phần Snapshots đó, nhấn vào cái snapshot mình đã tạo và nhấn Start:
+    </p>
+
+
+<p>
+    <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3901/62b456cd0b6d8.png" alt="">
+</p>
+
+<p>
+    Note: ở đây mình đã chọn snapshot đầu tiên rồi nhấn Start rồi nên nút Start sẽ hiện xám. Hoặc nếu các bạn vừa mới tạo snapshot xong thì nút cũng hiện xám như thế. Các bạn phải cài cái gì trong máy ảo đó thì nút Start sẽ hiện màu xanh
+</p>
+
+<hr>
+
+<p>
+    OK, bây giờ chúng ta vào việc cài đặt nhé. Mình sẽ dùng một cái package manager tên là 
+    chocolatey 
+    để cài phần mềm nhé!
+</p>
+
+
+<h2>Cài đặt chocolate</h2>
+
+<p>
+    Mở Command Prompt hoặc Powershell <b> với quyền Admin</b>
+</p>
+
+<p>
+    <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3901/62b459e84d7ed.png" alt="">
+</p>
+
+<p>
+    Cài đặt thành công, màn hình hiện như sau (ví dụ với Powershell):
+</p>
+
+<p>
+    <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3901/62b45bc4117f2.png" alt="">
+</p>
+
+<p>
+    Sau đó, bạn hãy nhập
+    <code>choco</code> 
+     trong Command Prompt hoặc Powershell để kiểm tra xem chocolatey có thể sử dụng được hay chưa. Nếu chưa sử dụng được, bạn cần phải tắt shell đi và mở lại, hoặc là nhập lệnh
+     <code> refreshenv</code> 
+     (mình sẽ ưu tiên cách dùng lệnh 
+     <code>refreshenv</code> 
+     , mình sẽ nói lý do ở đoạn sau bài viết).
+    </p>
+
+
+    <h2>
+        Cách sử dụng chocolatey:
+    </h2>
+<ul>
+    <li>Để cài đặt một gói:
+        <code>choco install -y &lt;tên-gói&gt;</code>
+    </li>
+    <li>Để update: 
+        <code>choco update -y &lt;tên-gói&gt;</code>
+    </li>
+    <li>
+        Để gỡ cài đặt
+        <code>choco uninstall -y &lt;tên-gói&gt;</code>
+    </li>
+</ul>
+
+<p>
+    Tương đối là đơn giản, đúng không?
+</p>
+
+<hr>
+
+<h2>Bonus: Thêm file README để chú thích cho file script</h2>
+
+<p>
+    Đôi khi, chúng ta sẽ cảm thấy file script này nó lằng nhằng quá mà mình không biết nó cài cái gì. Một file README sẽ liệt kê tất cả những tool sẽ được cài, ghi ra hướng dẫn cách chạy file script để cài đặt. Và bạn có thể có một danh sách Todos - những điều cần làm sau khi chạy file script đó.
+</p>
+
+<p>
+    Đây là link file README của mình, các bạn tham khảo rồi làm một cái cho riêng mình nhé: 
+    <a class="four" style=" font-family: monospace;" href="https://github.com/dung204/installed-scripts/blob/main/README.md">https://github.com/dung204/installed-scripts/blob/main/README.md</a>
+</p>
+
+<hr>
+
+<p>
+    Vừa rồi mình vừa hướng dẫn các bạn cách setup môi trường lập trình cho Windows nhanh chóng. Mình biết là quá trình chuẩn bị rất là lâu và lằng nhằng, nhưng nếu thành công thì khi cài trên máy khác thì quá trình cài sẽ mất tầm 5 - 15 phút (tùy vào số phần mềm cài, mạng, và cấu hình máy). Trong phần sau mình cùng các bạn setup cho Linux. Đảm bảo là khâu chuẩn bị bên Linux sẽ nhanh hơn Windows nhiều =))
+</p>
+
+<p>
+    Thân ái!
+</p>
+
+<div class="tag-box">
+    <a class="tag" href="https://fullstack.edu.vn/blog/tag/package-managers?page=1" >Package Manager</a>
+    <a class="tag" href="https://fullstack.edu.vn/blog/tag/software?page=1">Software</a>
+    <a class="tag" href="https://fullstack.edu.vn/blog/tag/setup?page=1">Setup</a>
+</div></div>
+          </section>
+        </main>
+
+       
+      </div>
+
+      
+    </div>
+    <aside>
+       
+<div class="tag-box">
+    Các chủ đề được đề xuất:
+
+            <ul class="ul">
+            <li> 
+                <a href="" class="tag">CSS Flexbox</a>
+            </li>
+            <li>
+                <a href="" class="tag">Layout Html CSS</a>
+            </li>
+            <li> 
+                <a href="" class="tag">Others</a>
+            </li>
+        </ul>
+    </div>
+    </aside>
+    
+
+    <footer class="footer">
+        <div class="center">W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references,<br> and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+
+            <br>
+            <br>
+        Copyright 1999-2022 by Refsnes Data. All Rights Reserved.
+W3Schools is Powered by W3.CSS.
+    
+</div>
+        </footer>
+
+
+</body>
+</html>

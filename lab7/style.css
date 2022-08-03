@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  list-style-type: none;
+}
+
+body {
+    background-image: url(https://paradoxgrooming.com/wp-content/uploads/2021/03/baner.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo-justify {
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    position: relative;
+}
+ 
+.nav-link:hover {
+    color: #E42626;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav-bar {
+    width: calc(100% * 4.5 / 7);
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-title {
+    padding: 10px;
+    font-size: medium;
+}
+
+.submenu1 {
+    background: #13181FE3;
+    width: 270px;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    bottom: auto;
+    overflow: hidden;
+}
+
+.section {
+    background: white;
+    margin-top: 70px;
+}
+
+.menu-item {
+    color: white;
+    font-size: small;
+    height: 20px;
+     margin-left: 10px;
+}
+
+.mitem {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.nav-link:hover .submenu1 {
+    display: block;
+}
+
+.mitem:hover {
+background: #767676;
+
+}
+
+.mitem:hover .menu-item {
+    color: #E42626;
+}
+
+.title {
+    font-family: Sans-serif;
+    padding-top: 40px;
+    font-size: xx-large;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+.shelf {
+    width: calc(100% *4 / 5.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product {
+    width: calc((100% - 30px) / 4);
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.product-pic {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-decription {
+    width: calc(100% - 10%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.price {
+    color: #E42626;
+    font-size: 20px;
+}
+
+.gio {
+    width: calc(100% - 30%);
+    background-color: #6EC1E4;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.product:hover {
+    box-shadow: 3px #76767691;
+    transform: scale(1.05);
+}
+
+.product-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.circle {
+  background-image: radial-gradient(circle, #456BD9, #456BD9 66%, transparent 66%);
+  height: 4em;
+  width: 4em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+}

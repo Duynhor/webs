@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARADOX 👌</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-justify">
+        <img
+          src="https://paradoxgrooming.com/wp-content/uploads/elementor/thumbs/a-p3x2ajtc27vagu7ou3589a3vfs5k8zn11yzngtmj34.png"
+          alt=""
+          class="logo"
+        />
+      </div>
+
+      <div class="nav-bar flex">
+        <nav class="nav-link">
+          <div class="nav-title">SÁP VUỐT TÓC NAM.</div>
+          <div class="submenu1">
+            <ul>
+              <li class="mitem">
+                <a href="" class="menu-item">Sáp vuốt tóc FIKA version 2021 </a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Hair Serum by Paradox - New version
+                </a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Sáp Kevin Murphy Rough Rider</a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Sáp Blumaan Ngựa Vằn Cavalier</a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Sáp vuốt tóc Rustylab - Claywax
+                </a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Sáp Volcanic Clay Apestoman 2020</a
+                >
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Sáp vuốt tóc Wax - 1821 Man Made</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="nav-link">
+          <div class="nav-title">CHĂM SÓC TÓC, DƯỠNG TÓC.</div>
+          <div class="submenu1">
+            <ul>
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Dầu dưỡng tóc Argan oil ép lạnh
+                </a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Serum làm dày tóc FIT - KEEP THICK</a
+                >
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Dầu gội FIT ngăn rụng tóc</a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Dầu xả FIT ngăn rụng tóc</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="nav-link">
+          <div class="nav-title">SẢN PHẨM HỖ TRỢ TẠO KIỂU.</div>
+          <div class="submenu1">
+            <ul>
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Hair Serum by Paradox - New version 2021</a
+                >
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Dầu dưỡng Argan oil nguyên chất</a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Cosa Nostra Pre-styling</a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item">Bột tạo kiểu tóc Dapper Dan</a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Sáp vuốt tóc Rustylab - Claywax
+                </a>
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Sáp Volcanic Clay Apestoman 2020</a
+                >
+              </li>
+
+              <li class="mitem">
+                <a href="" class="menu-item"
+                  >Sáp vuốt tóc Wax - 1821 Man Made</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="nav-link">
+          <div class="nav-title">HỖ TRỢ - REVIEW .</div>
+        </nav>
+      </div>
+
+      <section class="section">
+        <div class="shelf">
+          <div class="title">Chăm sóc tóc, Dưỡng tóc</div>
+          <div class="product-list flex">
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/07/Merlin-24-05-2021-25975-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Dưỡng ẩm – Làm Trắng Da Merlin Care+</div>
+
+                <div class="price">380.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <div class="title">SÁP VUỐT TÓC NAM</div>
+          <div class="product-list flex">
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+
+            <div class="product">
+              <a href="">
+                <img
+                  src="https://paradoxgrooming.com/wp-content/uploads/2021/03/IMG_5359-scaled-1-300x300.jpg"
+                  alt=""
+                  class="product-pic"
+                />
+              </a>
+              <div class="product-decription">
+                <div class="text">Sáp vuốt tóc Dapper Dan Deluxe Pomade</div>
+
+                <div class="price">450.000 ₫</div>
+              </div>
+
+              <div class="gio flex">Thêm vào giỏ hàng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="circle flex"><a href="#">💫</a></div>
+      </section>
+    </div>
+  </body>
+</html>
