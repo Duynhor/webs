@@ -63,3 +63,12 @@ const findAreaOfTriangle = function(a, b, c) {
 }
 
 console.log(findAreaOfTriangle(3,4,5))
+
+// Đổi độ C → độ F
+const celsiusToFahrenheit = function(temp) {
+  const result = temp * 9 / 5 + 32;
+
+  return result;
+}
+
+console.log(celsiusToFahrenheit(6))
