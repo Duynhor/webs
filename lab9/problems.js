@@ -46,29 +46,28 @@ console.log(findCircumferenceOfCircle(4));
 
 //Tính Diện tích Hình tròn
 const findAreaOfCircle = function (R) {
-  const result = Math.pow(R,2) * Pi;
+  const result = Math.pow(R, 2) * Pi;
 
   return result;
-}
+};
 
-console.log(findAreaOfCircle(4))
-
+console.log(findAreaOfCircle(4));
 
 //Tính Diện tích Hình tam giác theo công thức Heron
-const findAreaOfTriangle = function(a, b, c) {
+const findAreaOfTriangle = function (a, b, c) {
   let p = (a + b + c) / 2;
   let S = p * (p - a) * (p - b) * (p - c);
   const result = Math.sqrt(S);
   return result;
-}
+};
 
-console.log(findAreaOfTriangle(3,4,5))
+console.log(findAreaOfTriangle(3, 4, 5));
 
 // Đổi độ C → độ F
-const celsiusToFahrenheit = function(temp) {
-  const result = temp * 9 / 5 + 32;
+const celsiusToFahrenheit = function (temp) {
+  const result = (temp * 9) / 5 + 32;
 
   return result;
-}
+};
 
-console.log(celsiusToFahrenheit(6))
+console.log(celsiusToFahrenheit(6));
