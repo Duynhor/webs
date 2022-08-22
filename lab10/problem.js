@@ -2,18 +2,18 @@
 
 function maxOfThree(a, b, c) {
   if (a >= b && a > c) {
-    return a;
+    return "Số lớn nhất là " + a;
   } else if (b >= a && b > c) {
-    return b;
+    return "Số lớn nhất là " + b;
   } else {
-    return c;
+    return "Số lớn nhất là " + c;
   }
 }
 
 console.log(maxOfThree(1, 2, 3));
 console.log(maxOfThree(8, 30, 22));
 console.log(maxOfThree(3, 3, 2));
-console.log(maxOfThree(3, 2, 3));
+console.log(maxOfThree(24, 56, 33));
 
 // Tìm mùa tương ứng với tháng
 function findSeason(month) {
@@ -67,7 +67,7 @@ console.log(isLeafYear(2021));
 console.log(isLeafYear(2008));
 console.log(isLeafYear(2400));
 console.log(isLeafYear(344));
-console.log(isLeafYear(2022));
+console.log(isLeafYear(800));
 
 // Tìm số ngày trong tháng
 function findDayOfMonth(month, year) {
