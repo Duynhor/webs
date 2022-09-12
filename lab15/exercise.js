@@ -18,12 +18,13 @@ fourthLi.innerText = "Sleep";
 
 var time = document.querySelector(".clock");
 var date = new Date();
-var getTime = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
-var getDay = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()
-time.innerHTML = 'Bây giờ là ' + getTime + ' ngày ' + getDay;
+var getTime =
+  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+var getDay = date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+time.innerHTML = "Bây giờ là " + getTime + " ngày " + getDay;
 
 var tbodyRef = document
-  .querySelector('.list-students')
+  .querySelector(".list-students")
   .getElementsByTagName("tbody")[0];
 
 // thêm một hàng mới vào table
@@ -34,3 +35,11 @@ var newCell = newRow.insertCell();
 
 var newText = document.createTextNode("Thầy giáo Ba siêu cấp đẹp trai");
 newCell.appendChild(newText);
+
+// Đếm số từ có trong đoạn văn bản (số từ 'ba'; viết hoa hay thường đều tính)
+const p = document.querySelector(".bio");
+
+const text = p.textContent;
+
+const count = text.match(/ba/gi);
+console.log(count);
