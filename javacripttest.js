@@ -113,4 +113,51 @@ for (let key in ageOfStudents2) {
 
 console.log(ageOfStudents2);
 
-//
+/**
+ * Viết hàm truyền vào 2 chuỗi
+ * kiểm tra xem chuỗi thứ nhất có chứa toàn bộ ký tự (tính cả dấu cách) nằm trong chuỗi thứ 2 hay không
+ * kết quả trả về true nếu có và false nếu không (không phân biệt hoa thường)
+ * Ví dụ ''HELLO world'' có chứa ''how'' nhưng không chứa ''hey'' và không chứa ''ww''.
+ */
+
+function contains(str, char) {
+  const originalChars = str.toLowerCase().split(" ");
+  const subChars = char.toLowerCase();
+
+  let flag = true; // cờ cho biết str có chừa đầy đủ các ký tự của char hay ko
+
+  for (const char of subChars) {
+    const index = originalChars.indexOf(char);
+
+    if (index === -1) {
+      //ko chứa
+      flag = false;
+      break;
+    } else {
+      originalChars.splice(index, 1);
+    }
+  }
+
+  return flag;
+}
+
+console.log(contains("Hello world", "llo"));
+console.log(contains("Hello world", "how"));
+console.log(contains("Hello world", "rlll"));
+console.log(contains("Hello world", "rl"));
+
+function ziczac(row, col) {
+  const matrix = [];
+
+  for (let i = 1; i <= row; i++) {
+    const r = [];
+
+    for (let j = 1; j <= col; j++) {
+      if (i % 2 == 0) {
+        r.unshift(i - 1) * col + j
+      } else {
+        r.push(i-1)* col - j
+      }
+    }
+  }
+}
