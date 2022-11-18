@@ -1,0 +1,57 @@
+* {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header__navbar--item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.header__navbar--item:hover,
+.dropdown-item:hover {
+  color: #ff5353;
+}
+
+.header__top-header {
+  height: 50px;
+  background-color: #fef7f6;
+  padding: 10px 0;
+  margin-bottom: 29px;
+}
+
+.grid {
+  width: 1325px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+. {
+  background-image: url(https://demo.themeies.com/silon/images/bg-1.jpg);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  transition: all 300ms ease;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  border: #fef7f6;
+}
+
+.dropdown-item {
+  height: 50px;
+  margin: auto 0;
+}
+
+.dropdown-item: ;

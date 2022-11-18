@@ -1,0 +1,22 @@
+.navbar {
+    max-width: 100%;
+}
+
+
+.banner {
+    background-image: url(https://demo.themeies.com/silon/images/bg-1.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    
+}
+.banner-img {
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    
+}
+img {
+    max-width: 100%;
+}

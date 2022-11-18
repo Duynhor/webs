@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "fullname": "Nguyen Khanh Duy",
+      "dateOfBirth": "30/06/2003",
+      "email": "thabhpecc234@gmail.com",
+      "phone": "0398765432"
+    },
+    {
+      "id": 2,
+      "fullname": "duynhor",
+      "dateOfBirth": "14/09/2022",
+      "email": "duynhor3623@gmail.com",
+      "phone": "0913212345"
+    },
+    {
+      "id": 3,
+      "fullname": "Tran Nhat Minh",
+      "dateOfBirth": "27/07/2003",
+      "email": "donghoxinh@gmail.com",
+      "phone": "0888082008"
+    }
+  ]
+}

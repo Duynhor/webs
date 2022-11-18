@@ -1,0 +1,64 @@
+Mảng 
+Các phương thức ES6:
++ forEach
++ find
++ findIndex
++ includes
+
+Lập trình bất đồng bộ 
+Synchronous - Đồng bộ
+Chỉ thực hienj 1 thao tác tại 1 thời điểm, các thao tác khác phải xếp hàng đợi
+
+Lập trình bất đồng bộ được triên khai theo 3 cách: 
++ Call back
++ Promise
++ Async/await
+
+Các thao tác chính có thể thức hiện với DOM
++ Tìm kiếm/ duyệt qua các cấu trúc phần tử 
++ Chỉnh sửa nội dung/ thuộc tính/ thêm các sự kiện
++ Tạo các thành phần DOM
++ Thêm/sửa/ xóa các thành phần DOM
+
+Khi mà chỉ cần thêm cấu trúc DOM mà không có cá sự kienj thì có thể dùng innerHTML
+
+Khi mà cần tủy chỉnh các sự kiện thì nên dùng API document.create*
+
+Khi tạo giao diện thì nên chia nhỏ các phần giao diện ra thành các hàm nhỏ
+
+
+Ví dụ: khi cần render danh sách sản phẩm
+
+API
+
+Application Programming Interface - tập giao thức/ quy tắc để các ứng dụng/ hệ thống/ đối tướng khác nhau có thể giao tiếp và trao đổi dữ liệu với nhau
+
+Thư viện:
+
++ Interface - giao diện
+
+Trong lập tình web, APIs là có endpoints mà server cung cấp, cho phép sử dụng frontend có thể gửi/ nhận dữ liệu:
+
++ /api/user
++ /api/signup
+
+HTTP - HyperText Transfer Protocol (shipper)
+
++ Endpoint | URL
++ Method (mua hàng, trả hàng)
++ Header (ghi chú,)
++ Body( dữ liệu, món hàng)
+
+Impetement
+
++ XHR
++FetchAPI
+
+let user = { 
+    
+}
+
+fetch(""), {
+    method: "POST",
+    header: {}
+}

@@ -1,0 +1,38 @@
+/* 
+Sử dụng @media
+
+*/
+
+.box {
+  width: 1000px;
+  height: 300px;
+  background-color: blueviolet;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  font-size: 60px;
+  color: chartreuse;
+}
+
+/*printer screen speech*/
+/* Nếu độ rộng thiết bị nhỏ hơn 500px thì áp dụng CSS này*/
+@media screen and (min-width:700px) and (max-width: 1200px) {
+  .box {
+    background-color: chartreuse;
+  }
+
+  .content {
+    color: blueviolet;
+    font-size: 30px;
+    
+  }
+}
+/* max-width - từ kích thước lớn đến nhỏ */
+/* min-width - từ kích thước bé hơn đến lớn */
+/* mobile first: min-width */
+/* destop first: max-width */
