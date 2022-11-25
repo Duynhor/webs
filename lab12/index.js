@@ -54,4 +54,3 @@ const dang = {
     name: "Đăng",
 };
 
-ba.hello() = hello;

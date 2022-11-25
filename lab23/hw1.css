@@ -1,0 +1,28 @@
+.form {
+  width: 550px;
+  height: 410px;
+  border: solid rgba(205, 205, 205, 0.754);
+  border-radius: 5px;
+}
+
+#number-box {
+  width: 498px;
+  height: 40px;
+  border: solid rgba(205, 205, 205, 0.754);
+  border-radius: 5px;
+  margin-top: 10px;
+  color:rgb(112, 112, 112);
+}
+
+.label {
+    font-weight: 540;
+}
+
+.fnumber {
+    margin-bottom: 20px;
+}
+ .snumber {
+    margin-bottom: 20px;
+ }
+
+ :hover #number-box

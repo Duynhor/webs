@@ -151,6 +151,19 @@ background: #767676;
     margin-top: 5px;
     cursor: pointer;
 }
+.cart {
+    width: calc(100% - 30%);
+    background-color: #6EC1E4;
+    color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+}
 
 .product:hover {
     box-shadow: 3px #76767691;

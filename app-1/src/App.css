@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-family: Sans-serif;
+  padding-top: 40px;
+  font-size: xx-large;
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+.shelf {
+  width: calc(100% * 4 / 5.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product {
+  height: 400px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-pic {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-decription {
+  width: calc(100% - 10%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.price {
+  color: #e42626;
+  font-size: 20px;
+}
+
+.gio {
+  width: calc(100% - 30%);
+  background-color: #6ec1e4;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.cart {
+  width: calc(100% - 30%);
+  background-color: #6ec1e4;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 35px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.product:hover {
+  box-shadow: 3px #76767691;
+  transform: scale(1.05);
+}
+
+.product-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.circle {
+  background-image: radial-gradient(
+    circle,
+    #456bd9,
+    #456bd9 66%,
+    transparent 66%
+  );
+  height: 4em;
+  width: 4em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.olala {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: rgba(128, 128, 128, 0.688)
+  ;
+  font-size:22px;
+}
