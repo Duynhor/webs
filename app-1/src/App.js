@@ -1,19 +1,5 @@
 import "./App.css";
-
-function Product(props) {
-  return (
-    <div className="product">
-      <img src={props.image} alt={props.name} className="product-pic" />
-      <div className="product-decription">
-        <div className="text">{props.name}</div>
-
-        <div className="price">{props.price}</div>
-      </div>
-
-      <div className="cart flex">{props.cart}</div>
-    </div>
-  );
-}
+import Product from "./product";
 
 function App() {
   return (
@@ -38,7 +24,7 @@ function App() {
           cart="Thêm vào giỏ hàng"
         />
       </div>
-      <div class="olala">5.h.0.P.E.e version</div>
+      <div className="olala">5.h.0.P.E.e version</div>
     </div>
   );
 }
