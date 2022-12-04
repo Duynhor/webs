@@ -1,6 +1,6 @@
 import "./App.css";
 import Product from "./product";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
   return (
     <div className="container">
@@ -25,6 +25,7 @@ function App() {
         />
       </div>
       <div className="olala">5.h.0.P.E.e version</div>
+      <FontAwesomeIcon icon="fa-sharp fa-solid fa-house" />
     </div>
   );
 }

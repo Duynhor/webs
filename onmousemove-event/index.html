@@ -12,13 +12,13 @@
     ></script>
   </head>
   <body>
-    <div class="sun"><i class="fa-sharp fa-solid fa-sun"></i></div>
-    <div class="sky">
-      <div class="cloud1 cloud"><i class="fa-solid fa-cloud"></i></div>
-      <div class="cloud2 cloud"><i class="fa-solid fa-cloud"></i></div>
-      <div class="cloud3 cloud"><i class="fa-solid fa-cloud"></i></div>
-      <div class="cloud4 cloud"><i class="fa-solid fa-cloud"></i></div>
-      <div class="cloud5 cloud"><i class="fa-solid fa-cloud"></i></div>
+    <div className="sun"><i className="fa-sharp fa-solid fa-sun"></i></div>
+    <div className="sky">
+      <div className="cloud1 cloud"><i className="fa-solid fa-cloud"></i></div>
+      <div className="cloud2 cloud"><i className="fa-solid fa-cloud"></i></div>
+      <div className="cloud3 cloud"><i className="fa-solid fa-cloud"></i></div>
+      <div className="cloud4 cloud"><i className="fa-solid fa-cloud"></i></div>
+      <div className="cloud5 cloud"><i className="fa-solid fa-cloud"></i></div>
     </div>
     <div id="item">
       <svg
@@ -45,12 +45,12 @@
     </div>
     <script type="text/javascript">
       var item = document.getElementById("item");
-      addEventListener("click",addEventListener("mousemove", function (e) {
+      addEventListener("mousemove", function (e) {
         var x = e.clientX;
         var y = e.clientY;
         item.style.left = x + "px";
         item.style.top = y + "px";
-      })) 
+      });
     </script>
   </body>
 </html>
